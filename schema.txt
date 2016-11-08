@@ -1,0 +1,17 @@
+Patient(PSSN, Name, Initials, Address, Sex, Age, Date_Admitted,
+  Date_Discharged, ContactNum, Information, RID)
+
+Hospital(HID, HName, HAddress)
+
+Appointment(AID, PSSN, ESSN, RID) 
+
+Room(RID, RDescription, HID)
+
+Medicine(MCode, Dose, MPrice, MDescription, ESSN, PSSN)
+
+Procedure(PCode, PPrice, PDescription, PDate, PSSN, DoctorID)
+
+Employee(ESSN, Name, Address, Sex, Age, ContactNum, Salary, HID,
+  NurseFlag, DoctorFlag, LiscenceNo)
+
+ProcedureNurses(PCode, ESSN)

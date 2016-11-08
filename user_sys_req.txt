@@ -1,0 +1,45 @@
+An employee can schedule an appointment.
+    Employee is registered.
+    Appointments do not overlap times in the same room or for the same employee.
+    Patient doesn’t have two appointments at the given time.
+    Patient doesn’t have a procedure at the given time.
+
+An employee can schedule a procedure.
+    Employee is registered.
+    Procedures do not overlap times in the same room or for the same employee.
+    Patient doesn’t have two procedures at the given time.
+    Patient doesn’t have an appointment at the given time.
+
+An employee can book a room.
+    Employee is registered.
+    Room is not occupied at the given time.
+    Room is being booked for either a procedure or an appointment.
+
+A nurse can register a patient.
+    Nurse is registered.
+    Patient does not already exist in the system.
+
+A nurse can check in a patient.
+    Nurse is registered.
+    Patient is not already checked into the hospital.
+    Patient is already registered.
+
+A nurse can register an employee.
+    Employee does not already exist in the system.
+
+A doctor can prescribe medicine to a patient.
+    Patient is registered.
+    Doctor is registered.
+
+An employee can view his schedule. Schedule will include all procedures
+and appointments at the hospital the employee works at.
+    Employee is registered.
+
+An employee or a patient can view a patient’s schedule. Schedule will
+include prescriptions and all scheduled appointments at any of the
+registered hospitals.
+    Patient is registered.
+
+An employee can view a schedule of a room. Schedule will include all
+procedures and appointments in that room.
+    Employee is registered.

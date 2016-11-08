@@ -1,0 +1,112 @@
+Entities
+  Patient
+    Attributes
+      Name
+      Initials
+      Address
+      Sex
+      Age
+      Social Security Number (distinct)
+      ID No.
+      Date Admitted
+      Date Discharged
+      Contact No.
+      Information? (fill out)
+    Relationships
+      Attends Appointment (O:M)
+      Uses Room (O:O)
+      Prescribed Medicine (O:M)
+      Undergoes Procedure (O:M)
+  Hospital
+    Attributes
+      Name
+      Address
+      ID No.
+    Relationships
+      Employs Employee (O:M)
+      Contains Room (O:M)
+  Appointment
+    Attributes
+      ID No,
+    Relationships
+      Scheduled by Receptionist (M:O)
+      In Room (M:O)
+      For Patient (M:O)
+      By Doctor (M:O)
+  Room
+    Attributes
+      Room ID
+      Description
+    Relationships
+      Hosts Appointments (O:M)
+      Belongs to Hospital (M:O)
+      Maintained by Nurse (M:M?) ?????
+      Used by Patient (O:O)
+  Medicine
+    Attributes
+      Code
+      Price
+      Description
+      Dose
+    Relationships
+      Used for Patient (M:O) ????
+      Prescribed by Doctor (O:O)
+  Procedure
+    Attributes
+      Code
+      Price
+      Description
+      Date
+    Relationships
+      Performed on Patient (M:O)
+      Overseen by Doctor (M:O)
+      Helped by Nurses (M:M)
+  Employee
+    Attributes
+      Name
+      Address
+      Sex
+      Age
+      ID No.
+      Social Security Number
+      Contact No.
+      Salary (Need to figure out how to model this)
+    Relationships
+      Works at Hospital (M:O)
+    Subtypes
+      Receptionist
+        Relationships
+          Scheduled Appointment (O:M)
+      Nurse
+        Relationships
+          Maintains Room (M:M)
+          Helps Procedure (M:M)
+        Subtypes:
+          Critical Care Nurse
+          Geriatric Nurse
+          Neonatal Nurse
+          Neuroscience Nurse
+          Nurse Practitioner
+          Occupational Health
+          Pediatric Nurse
+          Women's Health
+      Doctor
+        Attributes
+          Status (Role)
+        Relationships
+          Performed Procedure (O:M)
+          Prescribed Medicine (O:M)
+        Types
+          Anesthesiologist
+          Cardiologist
+          Gynecologist
+          Obstetrician
+          Internal Medicine Specialist
+          Neurologist
+          Neurosurgeon
+          Oncologist
+          Pediatrician
+          Psychiatrist
+          Surgeon
+
+
