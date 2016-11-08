@@ -9,7 +9,10 @@ CREATE TABLE patient (
   sex   		        char(1),
   age		            int,
   date_admit        date, 
-  mgrstartdate      date,
-  primary key (dnumber),
-  key (dname)
+  date_disch      date,
+  contactNum	char(10),
+  info			varchar(200),
+  rid			char(9),
+  primary key (pssn),
+  foreign key (rid)
 );
