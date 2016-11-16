@@ -1,14 +1,14 @@
 An employee can schedule an appointment.
     Employee is registered.
     Appointments do not overlap times in the same room or for the same employee.
-    Patient doesn’t have two appointments at the given time.
-    Patient doesn’t have a procedure at the given time.
+    Patient doesn't have two appointments at the given time.
+    Patient doesn't have a procedure at the given time.
 
 An employee can schedule a procedure.
     Employee is registered.
     Procedures do not overlap times in the same room or for the same employee.
-    Patient doesn’t have two procedures at the given time.
-    Patient doesn’t have an appointment at the given time.
+    Patient doesn't have two procedures at the given time.
+    Patient doesn't have an appointment at the given time.
 
 An employee can book a room.
     Employee is registered.
