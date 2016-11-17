@@ -32,8 +32,8 @@
   echo "The ssn exists in the patient table.";
  }
  else {
-  $query = "INSERT INTO patient (ssn, fname, minit, lname, address, salary) 
-  VALUES('$ssn', '$fname', '$init', '$lname', '$address', '$sal')";
+  $query = "INSERT INTO patient (pssn, fname, minit, lname, address, sex, age) 
+  VALUES('$ssn', '$fname', '$minit', '$lname', '$address', '$sex', '$age')";
   $result = $con->query($query);
   
   if ($result) {echo "Data successfully added.";}
