@@ -14,5 +14,5 @@ CREATE TABLE patient (
   info			varchar(200),
   rid			char(9),
   primary key (pssn),
-  foreign key (rid)
+  foreign key (rid) references room(rid)
 );

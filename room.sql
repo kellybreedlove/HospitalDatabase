@@ -4,5 +4,5 @@ CREATE TABLE room (
   rdescription   varchar(200),
   hid		 char(3),
   primary key (rid),
-  foreign key (hid)
+  foreign key (hid) references hospital(hid)
 );

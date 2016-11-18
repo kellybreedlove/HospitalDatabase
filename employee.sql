@@ -14,5 +14,5 @@ CREATE TABLE employee (
   doctor_flg        char(1),
   liscence_no       int(15),
   primary key (essn),
-  foreign key (hid)
+  foreign key (hid) references hospital(hid)
 );

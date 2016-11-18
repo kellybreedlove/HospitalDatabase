@@ -5,7 +5,7 @@ CREATE TABLE appointment (
   essn	     char(9),
   rid		 char(3),
   primary key (aid),
-  foreign key (pssn),
-  foreign key (essn),
-  foreign key (rid)
+  foreign key (pssn) references patient(pssn),
+  foreign key (essn) references employee(essn),
+  foreign key (rid) references room(rid)
 );

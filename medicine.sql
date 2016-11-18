@@ -7,6 +7,6 @@ CREATE TABLE medicine (
   essn              char(9),
   pssn   	          char(9),
   primary key (mcode),
-  foreign key (essn),
-  foreign key (pssn)
+  foreign key (essn) references employee(essn),
+  foreign key (pssn) references patient(pssn)
 );
