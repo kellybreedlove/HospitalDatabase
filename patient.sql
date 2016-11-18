@@ -4,7 +4,6 @@ CREATE TABLE patient (
   fname             varchar(15),
   minit		          char(1),
   lname		          varchar(15),
-  inits             char(3),
   address   	      varchar(45),
   sex   		        char(1),
   age		            int,
