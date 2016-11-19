@@ -4,7 +4,6 @@
 <title>Add Patient</title>
 </head>
 <body>
-<h4>Patient Information</h4>
 
 <?php
  $host="localhost";
@@ -42,7 +41,11 @@
   
   $result = $con->query($query);
   
-  if ($result) {echo "Data successfully added.";}
+  if ($result) {
+  	echo "Data successfully added.";
+  	echo '<br>';
+  	echo '<a href="addPatient.html">Add Another Patient</a>';
+  }
   else {echo "Error inserting data.";}
  }
  $con->close();
