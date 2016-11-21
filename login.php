@@ -26,7 +26,7 @@
 
 	// Login successful.
 	if ($rows == 1) {
-		echo "<a href='home.php'>Home</a>";
+		echo "<a href='home.html'>Home</a>";
 	}
 	else
 	{
