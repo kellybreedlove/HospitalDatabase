@@ -1,0 +1,43 @@
+body {
+  font-family: Verdana;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 18pt;
+}
+
+a {
+  color: blue;
+}
+
+table.one {
+  width: 400px;
+  font-family: arial;
+  background-color: #ccc;
+  border-spacing: 10px;
+  border-collapse: seperate;
+  border-style: outset;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td.a {
+  border-style: solid;
+  border-width: 3px;
+  padding: 6px;
+  text-align: center;
+}
+
+.header {
+  color: purple;
+}
+
+#make-uc {
+  text-transform: uppercase;
+}
