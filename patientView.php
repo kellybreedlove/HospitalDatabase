@@ -15,9 +15,9 @@
 
   $con = new mysqli ($host, $user, $pw, $db);
 
-  $essn=$_POST["ssn"];
+  $ssn=$_POST["ssn"];
     
-  $query="SELECT * FROM patient where ssn=$pssn";
+  $query="SELECT * FROM patient where pssn=$ssn";
   $result=$con->query($query);
   $rows=$result->num_rows;
   
