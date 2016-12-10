@@ -2,10 +2,11 @@
 <html>
 	<head>
 	<title>View Patient Details</title>
+  <link rel="stylesheet" href="syle.css">
 	</head>
 
 <body>
-<h4>Patient Information</h4>
+<h4 class="header">Patient Information</h4>
 
 <?php
   $host="localhost";
@@ -23,34 +24,34 @@
   
 
   if ($rows == 1) {
-    echo "<table border='1' cellpadding='10'>";
-    echo "<tr> 
-			<th> SSN </th>
-      <th> First Name</th>
-			<th> Last Name</th>
-			<th> Address </th>
-			<th> Sex </th> 
-			<th> Age </th> 
-			<th> Date Admitted </th> 
-			<th> Date Discharged </th> 
-			<th> Contact Number </th> 
-			<th> Information </th> 
-			<th> Room ID </th> 
+    echo "<table class='one'>";
+    echo "<tr id='make-uc'> 
+			<th class='header'> SSN </th>
+      <th class='header'> First Name</th>
+			<th class='header'> Last Name</th>
+			<th class='header'> Address </th>
+			<th class='header'> Sex </th> 
+			<th class='header'> Age </th> 
+			<th class='header'> Date Admitted </th> 
+			<th class='header'> Date Discharged </th> 
+			<th class='header'> Contact Number </th> 
+			<th class='header'> Information </th> 
+			<th class='header'> Room ID </th> 
 		 </tr>";
    
      while ($row = $result->fetch_assoc()) {
        print "<tr>";
-       print "<td>".$row['pssn']."</td>";
-       print "<td>".$row['fname']."</td>";
-       print "<td>".$row['lname']."</td>";
-       print "<td>".$row['address']."</td>";
-       print "<td>".$row['sex']."</td>";
-       print "<td>".$row['age']."</td>";
-       print "<td>".$row['date_admit']."</td>";
-       print "<td>".$row['date_disch']."</td>";
-       print "<td>".$row['contactNum']."</td>";
-       print "<td>".$row['info']."</td>";
-       print "<td>".$row['rid']."</td>";
+       print "<td class='a'>".$row['pssn']."</td>";
+       print "<td class='a'>".$row['fname']."</td>";
+       print "<td class='a'>".$row['lname']."</td>";
+       print "<td class='a'>".$row['address']."</td>";
+       print "<td class='a'>".$row['sex']."</td>";
+       print "<td class='a'>".$row['age']."</td>";
+       print "<td class='a'>".$row['date_admit']."</td>";
+       print "<td class='a'>".$row['date_disch']."</td>";
+       print "<td class='a'>".$row['contactNum']."</td>";
+       print "<td class='a'>".$row['info']."</td>";
+       print "<td class='a'>".$row['rid']."</td>";
        print "</tr>";
      }
      echo "</table>";
