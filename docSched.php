@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Doctor Schedule</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
 
 ?>
 
-<h4>Doctor Schedule for: </h4>
+<h4 class="header">Doctor Schedule for: </h4>
 <form method="post" action="docSchedView.php">
 	<select name="ssn">
 
