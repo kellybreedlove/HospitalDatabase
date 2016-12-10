@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Add Patient</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
