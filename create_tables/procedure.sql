@@ -4,6 +4,7 @@ CREATE TABLE procedures (
   pprice             int,
   pdescr		         varchar(200),
   pdate		           date,
+  ptime					time,
   pssn               char(9),
   essn      	       char(9),
   primary key (pcode),
