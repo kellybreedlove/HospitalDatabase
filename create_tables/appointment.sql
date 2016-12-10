@@ -1,6 +1,8 @@
 DROP TABLE appointment;
 CREATE TABLE appointment (
   aid        char(3) not null,
+  adate		date,
+  atime		time,
   pssn       char(9),
   essn	     char(9),
   rid		 char(9),
