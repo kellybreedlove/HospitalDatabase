@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 10, 2016 at 06:08 PM
+-- Generation Time: Dec 10, 2016 at 06:23 PM
 -- Server version: 5.6.28
 -- PHP Version: 7.0.10
 
@@ -26,7 +26,6 @@ SET time_zone = "+00:00";
 -- Table structure for table `procedures`
 --
 
-DROP TABLE IF EXISTS `procedures`;
 CREATE TABLE `procedures` (
   `pcode` char(9) NOT NULL,
   `pprice` int(11) DEFAULT NULL,
