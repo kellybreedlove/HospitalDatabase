@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<title>View Patient Details</title>
-  <link rel="stylesheet" href="syle.css">
+  <link rel="stylesheet" href="style.css">
 	</head>
 
 <body>
@@ -50,7 +50,7 @@
        print "<td class='a'>".$row['date_admit']."</td>";
        print "<td class='a'>".$row['date_disch']."</td>";
        print "<td class='a'>".$row['contactNum']."</td>";
-       print "<td class='a'>".$row['info']."</td>";
+       print "<td class='a'>".$row['information_schema']."</td>";
        print "<td class='a'>".$row['rid']."</td>";
        print "</tr>";
      }

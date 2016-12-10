@@ -2,7 +2,7 @@
 <html>
 <head>
   	<title>Patient Search</title>
-	  <link rel="stylesheet" href="syle.css">
+	  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
