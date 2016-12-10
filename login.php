@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Employee Login</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>

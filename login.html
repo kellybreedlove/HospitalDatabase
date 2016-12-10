@@ -2,33 +2,34 @@
 <html>
 <head>
 	<title>Employee Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<h2>Login Credentials</h2>
+	<h4 class="header">Login Credentials</h4>
 
 	<form name="addform" action="Login.php" method="post">
 		<tablewidth="60%" border="0" cellpadding="3" cellspacing="12">
 
-	<tr>
-		<td width="130"><strong>SSN: </strong>*</td>
+	<tr id="make-uc">
+		<td class="a"><strong>SSN: </strong>*</td>
 		<td><input name="ssn" type="text" size="9" maxlength="9" /></td>
 	</tr>
 
-	<tr>
-		<td width="130"><strong>First Name: </strong>*</td>
+	<tr id="make-uc">
+		<td class="a"><strong>First Name: </strong>*</td>
 		<td><input name="fname" type="text" size="15" maxlength="15" /></td>
 	</tr>
 
-	<tr>
-		<td width="130"><strong>Last Name: </strong>*</td>
+	<tr id="make-uc">
+		<td class="a"><strong>Last Name: </strong>*</td>
 		<td><input name="lname" type="text" size="15" maxlength="15" /></td>
 	</tr>
 
-	<h3>* required</h3>
+	<h5>* required</h5>
 
-	<tr>
-		<td width="130"></td>
+	<tr id="make-uc">
+		<td class="a"></td>
 		<td>
 		<input type="reset" name="Reset" value="Reset" />
 		<input type="submit" name="Submit" value="Submit" /></td>
