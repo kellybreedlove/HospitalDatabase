@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<title>Patient Search</title>
-	</head>
-
+<head>
+  	<title>Patient Search</title>
+	  <link rel="stylesheet" href="syle.css">
+</head>
 <body>
 
 <?php
@@ -22,7 +22,7 @@
 
 ?>
 
-<h4>Patient Details for: </h4>
+<h4 class="header">Patient Details for: </h4>
 <form method="post" action="patientView.php">
 	<select name="ssn">
 
