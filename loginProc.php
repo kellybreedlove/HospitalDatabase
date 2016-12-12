@@ -1,10 +1,3 @@
-<html>
-<head>
-  	<title>Successful Login</title>
-	  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
 <?php	
 	$host="localhost";
 	$user="root";
