@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+  session_start();
+  if(!isset($_SESSION['sid'])) {
+	header("location: login.php");
+  }
+?>
+
 <html>
 	<head>
 	<title>View Patient Details</title>
@@ -62,6 +69,10 @@
 
 ?>
 
+<?php
+echo "<br><p><br><p>Session ID is ... " .$_SESSION['sid']. "<br><p>";
+echo "Click <a href='logout.php'>here</a> to logout.";
+?>
 
 </body>
 </html>
