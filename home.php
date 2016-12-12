@@ -8,13 +8,13 @@
 
 <html>
 <head>
-<title>All Departments</title>
+<title>Home</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h4 class="header">Home </h4>
+<h4 class="header">Home</h4>
 <a href="addPatientInfo.php">Add Patient</a><br>
 <a href="patient.php">View Patient</a><br>
 <a href="docSched.php">View Doctor Schedule</a><br>
