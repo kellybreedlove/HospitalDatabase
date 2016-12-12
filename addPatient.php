@@ -1,4 +1,11 @@
 <!DOCTYPE>
+<?php
+  session_start();
+  if(!isset($_SESSION['sid'])) {
+	header("location: login.php");
+  }
+?>
+
 <html>
 <head>
 <title>Add Patient</title>
@@ -51,5 +58,10 @@
  }
  $con->close();
  ?>
+ 
+ <?php
+echo "<br><p><br><p>Session ID is ... " .$_SESSION['sid']. "<br><p>";
+echo "Click <a href='logout.php'>here</a> to logout.";
+?>
 </body>
 </html>
