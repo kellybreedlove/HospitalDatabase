@@ -1,5 +1,5 @@
 An employee can schedule an appointment.
-    Employee is registered.
+    Employee is registered (employee needs ssn, first name, and last name to log in).
     Appointments do not overlap times in the same room or for the same employee.
     Patient doesn't have two appointments at the given time.
     Patient doesn't have a procedure at the given time.
@@ -17,6 +17,7 @@ An employee can book a room.
 
 A nurse can register a patient.
     Nurse is registered.
+    Patient needs SSN.
     Patient does not already exist in the system.
 
 A nurse can check in a patient.
