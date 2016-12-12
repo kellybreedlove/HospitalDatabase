@@ -1,3 +1,10 @@
+<html>
+<head>
+  	<title>Logout</title>
+	  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <?php
 session_start();
 
